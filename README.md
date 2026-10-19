@@ -41,6 +41,6 @@ L'architettura separa nettamente il backend (gestito tramite il pattern **DAO - 
 
 ## Installa le dipendenze: npm install
 ## Avvia Server: node server.js
-## Apri applicazione: [node server.js](http://localhost:3000)
+## Apri applicazione: http://localhost:3000
 
 
