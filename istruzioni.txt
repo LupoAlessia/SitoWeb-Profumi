@@ -1,0 +1,12 @@
+Autore progetto: Alessia Lupo
+matricola: 20040191
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+Credenziali degli utenti di prova:
+ID 1) username: 'alessia' ; email: 'alessia@gmail.com' password: 'alessia1'
+ID 2) username: 'giovanni' ; email: 'giovanni@gmail.com' password: 'giovanni1'
+ID 3) username: 'claudio' ; email: 'claudio@gmail.com' password: 'claudio1'
+
+
+Query per inserire gli ordini nella tabella:
+INSERT INTO [ORDER] (ID_ORDINE,ID_PRODOTTO,quantity,price,Valuta,ID_USER)VALUES (?,?,?,?,'€',?)
