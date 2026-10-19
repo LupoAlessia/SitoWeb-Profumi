@@ -2,6 +2,12 @@ Autore progetto: Alessia Lupo
 matricola: 20040191
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
+Avvio:
+## Installa le dipendenze: npm install
+## Avvia Server: node server.js
+## Apri applicazione: http://localhost:3000
+
+
 Credenziali degli utenti di prova:
 ID 1) username: 'alessia' ; email: 'alessia@gmail.com' password: 'alessia1'
 ID 2) username: 'giovanni' ; email: 'giovanni@gmail.com' password: 'giovanni1'
