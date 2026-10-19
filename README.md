@@ -32,15 +32,4 @@ L'architettura separa nettamente il backend (gestito tramite il pattern **DAO - 
 
 ---
 
-## ⚙️ Come eseguire il progetto in locale
-
-1. **Clona il repository ed entra nella cartella:**
-   ```bash
-   git clone [https://github.com/LupoAlessia/e-commerce-profumi-node.git](https://github.com/LupoAlessia/e-commerce-profumi-node.git)
-   cd e-commerce-profumi-node
-
-## Installa le dipendenze: npm install
-## Avvia Server: node server.js
-## Apri applicazione: http://localhost:3000
-
 
