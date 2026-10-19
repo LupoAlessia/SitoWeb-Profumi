@@ -1,0 +1,366 @@
+.invisible {
+  display: none;  
+}
+
+.body {
+  padding-top: 0;
+  font-family: "Verdana", "Geneva", sans-serif;
+  color: #000000;
+}
+
+/* Si azzera lo spazio nel main*/
+#app-container.col-12.mx-auto.border-shadow.space-out {
+  margin: 0; 
+  padding: 0; 
+}
+
+/* Stili per i link "Scopri di più"*/
+#promo-link, #news-link {
+  color: #000000;
+  border: 2px solid transparent; /* Imposta il bordo inizialmente trasparente */
+  transition: border-color 0.3s; /* Aggiungi una transizione per un effetto graduale */
+  text-decoration: none; /* Rimuovi il sottolineato */
+}
+
+/* hover quando il cursore del mouse si trova sopra al link*/
+#promo-link:hover , #news-link:hover{
+  border-color: black; /* Il bordo diventa nero chiaro quando ci passi sopra con il cursore */
+}
+
+/* Stili per l'elemento con l'ID 'immagine' */
+#immagine {
+  background-size: cover;
+  margin-top: 50px;
+  width: 100%;
+  height: 400px;
+  border: 1px solid #000;
+  overflow: hidden; /* Nasconde eventuali contenuti che superano i limiti dell'elemento. */
+  position: relative;
+  background-color: #000;
+}
+
+/* Stili per le immagini all'interno dell'elemento con l'ID 'immagine' */
+#immagine img {
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;  /* Imposta il modo in cui l'elemento img si adatta all'interno del contenitore. 'contain' fa sì che l'intera immagine sia contenuta senza distorsioni. */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Sezione icone in 'Promo e Novità'*/
+.sezione-icone {
+  padding-top: 5rem;
+  padding-bottom: 9rem;
+}
+
+/* spazio tra la sezione promo e la sezione novità (mobile)*/
+#sezione-promo, #sezione-news {
+  margin-top: 1rem; /* Aggiungi un margine di 2 rem in alto */
+  margin-bottom: 1rem; /* Aggiungi un margine di 2 rem in basso */
+}
+
+/* Stili per l'elemento con l'ID 'border-registrazione' */
+#border-registrazione {
+  text-align: center;
+  border: 3px solid #02070c;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #252625;
+  color: #ffffff;
+}
+
+/* adattamento per mobile della sezione registrazione*/
+@media (max-width: 750px) {
+  #border-registrazione {
+    border: 1px solid #02070c; /*  riduzione dello spessore del bordo per dispositivi mobili più piccoli */
+    padding: 5px; /* riduzione del padding per dispositivi mobili più piccoli */
+    text-align: center;
+  }
+}
+
+/* Stili per il footer */
+footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* Stili per i link in una lista inline a fondo pagina*/
+ul.list-inline li.list-inline-item a {
+  color: #000000;
+}
+
+/* Stili per la freccia back-to-top */
+#back-to-top {
+  display: flex;
+  position: fixed;
+  bottom: 11px;
+  right: 12px;  /* Sposta l'elemento a 12 pixel dalla destra del suo contenitore. */
+  font-size: 15px;
+  background-color: black;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;  /* Cambia il cursore del mouse quando si trova sopra l'elemento, indicando che è cliccabile. */
+  padding: 10px 10px;
+}
+
+/* Stili per il modal di login */
+#loginModal {
+  background-color: rgba(77, 78, 77, 0.6);
+  font-size: 20px;
+  padding: 90px 90px;
+}
+
+/* adattamento del loginModal al mobile*/
+@media (max-width: 750px) {
+  #loginModal {
+    font-size: 16px; 
+    padding: 30px; 
+  }
+}
+
+/* Stili messaggio di allerta */
+#alert-message {
+  z-index: 1000; /* gestisce la sovrapposizione degli elementi */
+}
+
+/* STILI PAGINA ABOUT, CUSTOMER SERVICE E PRIVACY POLICY*/
+#about, #customer, #privacy {
+  color: rgb(16, 10, 10);
+  background-color: #BCB8B1;
+  padding: 10px; /* Aggiunto spazio intorno al contenuto */
+  font-size: 18px;
+  line-height: 1.6; /* Questo determina lo spazio verticale tra le righe di testo */
+  border: 2px solid #000;
+  border-radius: 10px;  /* Margini arrotondati */
+  margin: 70px; /* Margine di 10 px */
+  display: flex;
+  flex-direction: column; /* gli elementi figli saranno allineati verticalmente */
+  justify-content: center;  /* gli elementi sono posizionati al centro rispetto all'altezza dell'elemento genitore */
+  align-items: center;  /* gli elementi sono posizionati al centro rispetto alla larghezza dell'elemento genitore */
+}
+
+/* Stili per i titoli nelle pagine About, Customer Service e Privacy Policy */
+#about h2, #customer h2, #privacy h2 {
+  font-size: 24px; /* Dimensione del testo per i titoli */
+  margin-bottom: 10px; /* Spazio tra il titolo e il paragrafo successivo */
+  text-align: center;
+}
+
+/* Stili per i paragrafi nelle pagine About, Customer Service e Privacy Policy */
+#about p, #customer p, #privacy p {
+  margin-bottom: 10px; /* Spazio tra i paragrafi */
+  text-align: center;
+}
+
+/* Adattamento per dispositivi mobili nelle pagine About, Customer Service e Privacy Policy */
+@media (max-width: 750px) {
+  #about, #customer, #privacy {
+    font-size: 16px;
+    padding: 10px;
+    margin: 20px;
+    margin-top: 70px;
+  }
+}
+
+/* STILI PAGINA PROFUMI*/
+
+/* Aggiunge un po' di spazio sopra e sotto l'header */
+h2.mb-4 {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+/* Riduce lo spazio tra le card */
+.card {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin: 0.5rem auto;
+ 
+}
+
+/* Allinea il testo al centro nelle card */
+.card-body {
+  text-align: center;
+}
+
+/* Stili per i dettagli nelle card */
+details {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Stili per dispositivi mobili con larghezza massima di 767 pixel */
+@media (max-width: 767px) {
+  h2.mb-4 {
+      margin-top: 5rem;
+      margin-bottom: 1rem;
+      font-size: 1.5rem; /* Esempio di dimensioni del testo più piccole per dispositivi mobili */
+  }
+
+  .card {
+      margin: 0.5rem; /* Aggiunta di uno spazio uniforme su tutti i lati */
+      margin-bottom: 1rem; /* Aggiunta di spazio sotto la card */
+      margin: 0.5rem auto; 
+  }
+}
+
+
+/* STILI PAGINA PROFILO */
+.contenitoreProfilo {
+  color: #333;
+  background-color: rgb(194, 205, 213);
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto; /* Riempi l'altezza della viewport */
+  border: 2px solid #555;
+  border-radius: 2%;
+  margin: 70px 20px 20px;
+  padding: 20px; /* Aggiunto padding per uno spaziamento interno */
+}
+
+.profilo {
+  text-align: center;
+  max-width: 800px; /* Imposta una larghezza massima per il contenuto */
+  margin: 0 auto; /* Centra il contenuto orizzontalmente */
+}
+
+.profilo h2 {
+  color: red;
+}
+
+.profilo label {
+  display: block; /* Fai sì che le etichette occupino una riga ciascuna */
+  margin-bottom: 5px; /* Aggiunge spazio tra le etichette e gli input */
+}
+
+#footerProfilo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.informazioni-personali {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.informazioni-personali label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.informazioni-personali span {
+  font-style: italic;
+}
+
+
+/* STILI PAGINA CARRELLO */
+.contenitoreCarrello {
+  color: #333;
+  background-color: rgb(194, 205, 213); /*I valori (194, 205, 213) rappresentano rispettivamente l'intensità del rosso, verde e blu.s*/
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto; /* Riempi l'altezza della viewport */
+  border: 2px solid #555;
+  border-radius: 2%;
+  margin: 70px 20px 20px; 
+  padding: 20px; /* Aggiunto padding per uno spaziamento interno */
+}
+
+.carrello, .dettagli, .riepilogo {
+  text-align: center;
+  max-width: 800px; /* Imposta una larghezza massima per il contenuto */
+  margin: 0 auto; /* Centra il contenuto orizzontalmente */
+}
+
+.prodotto {
+  margin-bottom: 20px; /* Aggiunto margine inferiore tra i prodotti nel carrello */
+}
+
+.riepilogo h2{
+  color: red;
+}
+
+.rimuovi {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer; /* Aggiunto un effetto cursore per indicare che è cliccabile */
+}
+
+#procedi {
+  display: inline-block; /* Per far funzionare il margine automatico */
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Aggiunto effetto di transizione */
+}
+
+#procedi:hover {
+  background-color: #555; /* Cambia il colore al passaggio del mouse */
+}
+
+#footerCarrello {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.ordine #totaleOrdine {
+  font-weight: bold;
+}
+
+/* STILI PAGINA ORDINI */
+.contenitoreOrdini {
+  color: #333;
+  background-color: rgb(194, 205, 213);
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto; /* Riempi l'altezza della viewport */
+  border: 2px solid #555;
+  border-radius: 2%;
+  margin: 70px 20px 20px;
+  padding: 20px; /* Aggiunto padding per uno spaziamento interno */
+}
+
+.ordine {
+  margin-bottom: 20px; /* Aggiunto margine inferiore tra gli ordini */
+}
+
+#totaleProdotto {
+  font-weight: bold;
+}
+
+.ordini {
+  text-align: center;
+  max-width: 800px; /* Imposta una larghezza massima per il contenuto */
+  margin: 0 auto; /* Centra il contenuto orizzontalmente */
+}
+
+.ordini h4 {
+  color: red;
+}
+
+#footerOrdini {
+  text-align: center;
+  margin-top: 20px; /* Aggiunto margine superiore per spaziare il footer dalla sezione degli ordini */
+}

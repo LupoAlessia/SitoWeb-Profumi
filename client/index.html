@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="it">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="./Immagini/icona.png" type="image/x-icon">
+
+        <!-- Bootstrap via CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="customs.css" type="text/css">
+        
+        <!-- Optional JavaScript -->
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+
+        <!-- Custom JS -->
+        <script defer src="./js/moment.min.js"></script>
+        <script defer type="module" src="./js/main.js"></script>
+
+        <title>Perfume boutique</title>
+    </head>
+
+    <body>
+        <header>
+          <nav class="navbar navbar-expand-lg bg-body-tertiary navbar fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/home">Perfume Boutique</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" id="login" href="/login" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active invisible" aria-current="page" id="logout" href="/logout">Logout</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/carrello">Carrello</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active invisible" aria-current="page" id="profilo" href="/profilo">Profilo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active invisible" aria-current="page" id="ordine" href="/ordine">Ordini</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                      Profumi
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/profumoUomo">Uomo</a></li>
+                      <li><a class="dropdown-item" href="/profumoDonna">Donna</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        <div id="alert-message"></div>
+        
+        <!-- contenuto principale della pagina-->
+        <main class="container-fluid mb-3">
+          <div class="row">
+              <div class="col-12 mx-auto border-shadow space-out" id="app-container">
+                  <!-- Contenuto -->
+              </div>
+          </div>
+      </main>
+         
+    </body>
+</html>
